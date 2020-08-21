@@ -1,0 +1,26 @@
+.BigButton{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #3b444b;
+    border-radius: 10px;
+    color: bisque;
+    background-color: rgb(59, 68, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ButtonName{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+a.buttonLabel:active, /* активная/посещенная ссылка */
+a.buttonLabel:hover,  /* при наведении */
+a.buttonLabel {
+  text-decoration: none;
+  color: bisque;
+}
