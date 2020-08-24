@@ -1,9 +1,0 @@
-.topImage{
-    background-image: url('../../images/topLogo.png');
-    height: 300px;
-    width: 600px;
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
