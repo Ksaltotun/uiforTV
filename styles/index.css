@@ -6,6 +6,7 @@ body{
     background-repeat: repeat;
     background-position: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque;
 }
 .topImageBox{
     position: absolute;
@@ -32,7 +33,7 @@ body{
     width: 200px;
     height: 200px;
     border: 1px solid #3b444b;
-    border-radius: 10px;
+    border-radius: 100px;
     color: bisque;
     background-color: rgb(59, 68, 75);
     display: flex;
@@ -56,11 +57,11 @@ body{
     flex-direction: column;
 }
 
-.backButton, .backButtonYear, .backButtonMonth{
+.backButton, .backButtonYear, .backButtonMonth, .backButtonDocView{
     width: 100px;
     height: 50px;
     background-color:rgb(59, 68, 75);
-    border-radius: 10px;
+    border-radius: 50px;
     color: bisque;
     text-align: center;
     line-height: 50px;
@@ -86,14 +87,14 @@ section{
     width: 200px;
     height: 50px;
     background-color:rgb(59, 68, 75);
-    border-radius: 10px;
-    color: bisque;
+    border-radius: 50px;
+    color: #ffe4c4;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
 }
 
-.boxforYear, .boxforMonth{
+.boxforYear, .boxforMonth {
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -106,6 +107,10 @@ section{
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.boxforMonth{
+    padding-top: 100px;
 }
 
 .docsPack{
@@ -122,6 +127,96 @@ section{
 }
 
 .docRow{
+    width: 1200px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background-color: rgb(59, 68, 75);
+}
+
+.imageBoxDoc{
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/icons8-book-64.png');
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.textBoxDoc{
+    text-align: center;
+    line-height: 64px;
+}
+
+.boxforMonth header, .boxforDocView header{
+    height: 50px;
     width: 100vw;
-    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-top:10px;
+    margin-bottom: 10px;
+}
+
+.boxforDocView{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:white;
+    background-image: url('../images/gtn-druzhba_logo13.png');
+    background-repeat: repeat;
+    background-position: center;
+    padding-top: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.docViewFrame{
+    width: 90vw;
+    height: 90vh;
+}
+
+.boxForDocList{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBoxNorm{
+    width: 1300px;
+}
+
+.imageBoxNorm{
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/icons8-law-100.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 100px;
+}
+
+.docRowNorm{
+    width: 1400px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    padding-left: 10px;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background-color: rgb(59, 68, 75);
 }
