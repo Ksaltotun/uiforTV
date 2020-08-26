@@ -55,17 +55,21 @@ body{
     background-position: center;
     display: none;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .backButton, .backButtonYear, .backButtonMonth, .backButtonDocView{
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 60px;
     background-color:rgb(59, 68, 75);
     border-radius: 50px;
     color: bisque;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 header{
@@ -208,7 +212,7 @@ section{
     border-radius: 100px;
 }
 
-.docRowNorm{
+.docRowNorm, .docRowOrder{
     width: 1400px;
     height: 80px;
     cursor: pointer;
@@ -219,4 +223,26 @@ section{
     margin-bottom: 10px;
     border-radius: 50px;
     background-color: rgb(59, 68, 75);
+}
+
+.imageBoxOrder{
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/icons8-scroll-64 (1).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 100px;
+}
+
+.imageBackBox{
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/icons8-long-arrow-left-50.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 100px;
 }

@@ -122,7 +122,25 @@
             'name': 'Указ президента Республики Беларусь №254 "О деятельности информационно-пропагандистских групп и об участии руководителей республиканских и местных государственных органов и иных государственных организаций в идеологической работе"',
             'link': '../normActs/Ukaz-Prezidenta-Respubliki-Belarus-254-ot16-iyunya-2003g..pdf'
         },
+    ];
 
+    const orders = [
+        {
+            'name': 'Приказ №284 от 06.04.2020',
+            'link': '../orders/Приказ № 284 от 06.04.2020.pdf'
+        },
+        {
+            'name': 'Приказ №513 от 02.11.2018 "О идеологической работе"',
+            'link': '../orders/Приказ № 513 от 02.11.2018 О идеологической работе.pdf'
+        },
+        {
+            'name': 'Приказ № 559 от 22.11.2018',
+            'link': '../orders/Приказ № 559 от 22.11.2018.pdf'
+        },
+        {
+            'name': 'Приказ №506 от 08.08.2019 ИПГ',
+            'link': '../orders/Приказ №506 от 08.08.2019 ИПГ.pdf'
+        }
 
     ];
 
@@ -140,6 +158,7 @@
     const boxForDocView = document.querySelector('.boxforDocView');
     const boxForDocList = document.querySelector('.boxForDocList');
     const normAct = document.querySelector('.boxForNormAct');
+    const orderBox = document.querySelector('.boxForOrder');
 
     function showYearPage(year) {
         yearPage.childNodes.forEach = [].forEach;
@@ -160,9 +179,9 @@
         yearPage.style.display = 'flex';
     }
 
-    function fullingNormAct() {
+    function fullingNormAct(dataSet, element) {
         boxForDocList.innerHTML = '';
-        normActsData.forEach(act => {
+        dataSet.forEach(act => {
             let docRow = document.createElement('div');
             let imageBox = document.createElement('div');
             let textBox = document.createElement('div');
@@ -174,7 +193,46 @@
             docRow.appendChild(textBox);
             boxForDocList.appendChild(docRow);
         });
-        normAct.appendChild(boxForDocList);
+        element.appendChild(boxForDocList);
+    }
+
+    function fullingOrders(dataSet, element) {
+        boxForDocList.innerHTML = '';
+        dataSet.forEach(act => {
+            let docRow = document.createElement('div');
+            let imageBox = document.createElement('div');
+            let textBox = document.createElement('div');
+            imageBox.className = 'imageBoxOrder';
+            docRow.className = 'docRowOrder';
+            textBox.className = 'textBoxOrder';
+            textBox.innerText = act.name;
+            docRow.appendChild(imageBox);
+            docRow.appendChild(textBox);
+            boxForDocList.appendChild(docRow);
+        });
+        element.appendChild(boxForDocList);
+    }
+
+    function loadDocOrder(docName) {
+        boxForDocView.childNodes.forEach = [].forEach;
+        boxForDocView.childNodes.forEach(node => {
+            if (node.className === 'docViewFrame') {
+                node.remove();
+            }
+        });
+        let windowDoc = document.createElement('iframe');
+        windowDoc.className = 'docViewFrame';
+        let src = '';
+
+        for (let i in orders) {
+            console.dir(orders[i]);
+            if (orders[i].name === docName) {
+                src = orders[i].link;
+            }
+        }
+        windowDoc.src = src;
+        windowDoc.embedded = 'true';
+        boxForDocView.appendChild(windowDoc);
     }
 
     function showDocsPage(month) {
@@ -234,7 +292,7 @@
         for (let i in normActsData) {
             console.dir(normActsData[i]);
             if (normActsData[i].name === docName) {
-                src =normActsData[i].link;
+                src = normActsData[i].link;
             }
         }
         windowDoc.src = src;
@@ -261,10 +319,11 @@
         } else if (target.id == 'normact') {
             state = 2;
             compareState(state, pages);
-            fullingNormAct();
+            fullingNormAct(normActsData, normAct);
         } else if (target.id == 'order') {
             state = 3;
             compareState(state, pages);
+            fullingOrders(orders, orderBox);
         } else if (target.className === 'backButton' || target.parentNode.className === 'backButton') {
             state = 0;
             compareState(state, pages);
@@ -272,17 +331,14 @@
             stateYear = 1;
             compareState(0, pages);
             showYearPage(target.innerText);
-
             year = target.innerText;
         } else if (target.className === 'backButtonYear' || target.parentNode.className === 'backButtonYear') {
             state = 1;
             compareState(state, pages);
             yearPage.style.display = 'none';
         } else if (target.className === 'monthButton' || target.parentNode.className === 'monthButton') {
-
             yearPage.style.display = 'none';
             month = target.innerText;
-
             showDocsPage(target.innerText);
         } else if (target.className === 'backButtonMonth' || target.parentNode.className === 'backButtonMonth') {
             stateYear = 1;
@@ -292,8 +348,9 @@
         } else if (target.className === 'docRow' || target.parentNode.className === 'docRow') {
             boxForDocView.style.display = 'flex';
             monthPage.style.display = 'none';
-            loadDocInfo(target.innerText);
+            loadDocInfo(target.innerText  || target.parentNode.innerText);
         } else if (target.className === 'backButtonDocView' || target.parentNode.className === 'backButtonDocView') {
+            console.log(state)
             if (state === 1) {
                 boxForDocView.style.display = 'none';
                 monthPage.style.display = 'flex';
@@ -301,11 +358,20 @@
                 boxForDocView.style.display = 'none';
                 normAct.style.display = 'flex';
             }
+            else if (state === 3) {
+                boxForDocView.style.display = 'none';
+                orderBox.style.display = 'flex';
+            }
         }
         else if (target.className === 'docRowNorm' || target.parentNode.className === 'docRowNorm') {
             normAct.style.display = 'none';
             boxForDocView.style.display = 'flex';
-            loadDocNorm(target.innerText);
+            loadDocNorm(target.innerText || target.parentNode.innerText);
+        }
+        else if (target.className === 'docRowOrder' || target.parentNode.className === 'docRowOrder') {
+            normAct.style.display = 'none';
+            boxForDocView.style.display = 'flex';
+            loadDocOrder(target.innerText || target.parentNode.innerText);
         }
     }
 
@@ -315,4 +381,3 @@
 })();
 
 
-//.indexOf(target.innerText) !== -1
