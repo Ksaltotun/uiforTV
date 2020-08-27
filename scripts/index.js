@@ -5,79 +5,79 @@
             'январь': [
                 {
                     'name': 'Рынок труда в Республике Беларусь,  занятость населения (материалы для информационно-пропагандистских групп)',
-                    'link': '../docs/january/Materialy-IPG-janvar-2020.pdf'
+                    'link': './docs/january/Materialy-IPG-janvar-2020.pdf'
                 },
                 {
                     'name': 'Профилактика алкоголизма, наркомании и токсикомании в молодежной среде',
-                    'link': '../docs/january/OBLASTNYE-MATERIALY-podrostkovyj-alkogolizm-i-narkomanija.pdf'
+                    'link': './docs/january/OBLASTNYE-MATERIALY-podrostkovyj-alkogolizm-i-narkomanija.pdf'
                 },
                 {
                     'name': 'Рынок труда в Республике Беларусь, занятость и заработная плата населения',
-                    'link': '../docs/january/OBLASTNYE-MATERIALY-rynok-truda.pdf'
+                    'link': './docs/january/OBLASTNYE-MATERIALY-rynok-truda.pdf'
                 },
             ],
             'февраль': [
                 {
                     'name': 'Транспортный комплекс республики Беларусь, перспективы развития  (материалы для информационно-пропагандистских групп)',
-                    'link': '../docs/february/RESPUBLIKANSKIE-Materialy-IPG-fevral-2020.pdf'
+                    'link': './docs/february/RESPUBLIKANSKIE-Materialy-IPG-fevral-2020.pdf'
                 },
                 {
                     'name': 'Транспортный комплекс республики Беларусь, состояния и перспективы его развития',
-                    'link': '../docs/february/RESPUBLIKANSKIE-Materialy-IPG-fevral-2020.pdf'
+                    'link': './docs/february/RESPUBLIKANSKIE-Materialy-IPG-fevral-2020.pdf'
                 }
             ],
             'март': [
                 {
                     'name': 'Социально-экономическое состояние регионов и перспективы их развития (для информационно-пропагандистских групп)',
-                    'link': '../docs/march/IPG-mart-2020-Gomelskaja-obl..pdf'
+                    'link': './docs/march/IPG-mart-2020-Gomelskaja-obl..pdf'
                 },
                 {
                     'name': 'Социально-экономическое развитие Гомельской области и перспективы ее развития',
-                    'link': '../docs/march/OBLASTNYE-MATERIALY-Sotsialno-ekonomicheskoe-razvitie-1.pdf'
+                    'link': './docs/march/OBLASTNYE-MATERIALY-Sotsialno-ekonomicheskoe-razvitie-1.pdf'
                 },
                 {
                     'name': 'Предупреждение совершения преступлений несовершеннолетними  (материалы для информационно-пропагандистских групп)',
-                    'link': '../docs/march/OBLASTNYE-MATERIALY-Preduprezhdenie-sovershenija-prestuplenij-v-sfere-vysokix-texnologij.pdf'
+                    'link': './docs/march/OBLASTNYE-MATERIALY-Preduprezhdenie-sovershenija-prestuplenij-v-sfere-vysokix-texnologij.pdf'
                 },
                 {
                     'name': 'Здоровое сердце - залог долгой и продуктивной жизни. Профилактика сердечно сосудистых заболеваний в Гомельской области',
-                    'link': '../docs/march/OBLASTNYE-MATERIALY-zdorovoe-serdtse.pdf'
+                    'link': './docs/march/OBLASTNYE-MATERIALY-zdorovoe-serdtse.pdf'
                 }
             ],
             'апрель': [
                 {
                     'name': 'О ходе реализации в 2019 году Государственной программы по преодолению последствий катастрофы на Чернобыльской АЭС',
-                    'link': '../docs/april/ChAES-ko-dnju-informirovanija (3).pdf'
+                    'link': './docs/april/ChAES-ko-dnju-informirovanija (3).pdf'
                 },
                 {
                     'name': 'Итоги Великой Отечественной войныи вклад белорусского народа в общую Победу',
-                    'link': '../docs/april/Respublikanskaja-tema-IPG-aprel-2020-ITOG (1).pdf'
+                    'link': './docs/april/Respublikanskaja-tema-IPG-aprel-2020-ITOG (1).pdf'
                 }
             ],
             'май': [
                 {
                     'name': 'Информация об итогах социально-экономического развития Гомельской области',
-                    'link': '../docs/may/GOMELSchINA-IPG (2).pdf'
+                    'link': './docs/may/GOMELSchINA-IPG (2).pdf'
                 },
                 {
                     'name': 'Предупреждение распространения пожаров и ЧС в ГОмельской области',
-                    'link': '../docs/may/Informatsija-profilakticheskaja (1).pdf'
+                    'link': './docs/may/Informatsija-profilakticheskaja (1).pdf'
                 }
             ],
             'июнь': [
                 {
                     'name': 'О безопасности жизни и здоровья детей в период летних каникул',
-                    'link': '../docs/june/EDINYJ-DEN-INFORMIROVANIJa-Bezopasnost-zhizni-i-zdorovjja-detej.pdf'
+                    'link': './docs/june/EDINYJ-DEN-INFORMIROVANIJa-Bezopasnost-zhizni-i-zdorovjja-detej.pdf'
                 },
                 {
                     'name': 'Республика Беларусь - уверенным шагом по пути независимости',
-                    'link': '../docs/june/Июнь 2020 Информация по единому дню информирования.pdf'
+                    'link': './docs/june/Июнь 2020 Информация по единому дню информирования.pdf'
                 }
             ],
             'июль': [
                 {
                     'name': 'О безопасности жизни и здоровья детей в период летних каникул',
-                    'link': '../docs/julie/Июль 2020 Информация по Единому Дню Информирования.pdf'
+                    'link': './docs/julie/Июль 2020 Информация по Единому Дню Информирования.pdf'
                 }
             ]
         }
@@ -96,59 +96,59 @@
     const normActsData = [
         {
             'name': 'Декрет президента Республики Беларусь №5 "Об усилении требований к руководящим кадрам и сотрудникам организаций"',
-            'link': '../normActs/Декрет 5.pdf'
+            'link': './normActs/Декрет 5.pdf'
         },
         {
             'name': 'Декрет президента Республики Беларусь №18 "Об дополнительных мерах по государственной защите детей в неблагополучных семьях"',
-            'link': '../normActs/Декрет № 18.pdf'
+            'link': './normActs/Декрет № 18.pdf'
         },
         {
             'name': 'Директива №1 "О мерах по укреплению общественной безопасности и дисциплины"',
-            'link': '../normActs/Директива № 1.pdf'
+            'link': './normActs/Директива № 1.pdf'
         },
         {
             'name': 'Директива №2 "О мерах о дебюрократизации государственного аппарата и повышении качества обеспечения жизнедеятельности населения"',
-            'link': '../normActs/Директива Д 2.pdf'
+            'link': './normActs/Директива Д 2.pdf'
         },
         {
             'name': 'Директива №3 "О приоритетных направлениях экономической безопасности государства"',
-            'link': '../normActs/Директива Д 3.pdf'
+            'link': './normActs/Директива Д 3.pdf'
         },
         {
             'name': 'Директива №4 "О развитии предпринимательской инициативы и стимулировании деловой активности в Республике Беларусь"',
-            'link': '../normActs/Директива Д 4.pdf'
+            'link': './normActs/Директива Д 4.pdf'
         },
         {
             'name': 'Указ президента Республики Беларусь №254 "О деятельности информационно-пропагандистских групп и об участии руководителей республиканских и местных государственных органов и иных государственных организаций в идеологической работе"',
-            'link': '../normActs/Ukaz-Prezidenta-Respubliki-Belarus-254-ot16-iyunya-2003g..pdf'
+            'link': './normActs/Ukaz-Prezidenta-Respubliki-Belarus-254-ot16-iyunya-2003g..pdf'
         },
     ];
 
     const orders = [
         {
             'name': 'Приказ №284 от 06.04.2020',
-            'link': '../orders/Приказ № 284 от 06.04.2020.pdf'
+            'link': './orders/Приказ № 284 от 06.04.2020.pdf'
         },
         {
             'name': 'Приказ №513 от 02.11.2018 "О идеологической работе"',
-            'link': '../orders/Приказ № 513 от 02.11.2018 О идеологической работе.pdf'
+            'link': './orders/Приказ № 513 от 02.11.2018 О идеологической работе.pdf'
         },
         {
             'name': 'Приказ № 559 от 22.11.2018',
-            'link': '../orders/Приказ № 559 от 22.11.2018.pdf'
+            'link': './orders/Приказ № 559 от 22.11.2018.pdf'
         },
         {
             'name': 'Приказ №506 от 08.08.2019 ИПГ',
-            'link': '../orders/Приказ №506 от 08.08.2019 ИПГ.pdf'
+            'link': './orders/Приказ №506 от 08.08.2019 ИПГ.pdf'
         }
-
     ];
 
     let state = 0;
     let stateYear = 0;
     let year = '';
     let month = '';
-    // const month = ['январь', 'фефраль', 'март', 'апрель', 'май', 'июнь', 'июль'];
+   
+
     const pages = [document.querySelector('.boxForInfo'),
     document.querySelector('.boxForNormAct'),
     document.querySelector('.boxForOrder')
@@ -159,6 +159,7 @@
     const boxForDocList = document.querySelector('.boxForDocList');
     const normAct = document.querySelector('.boxForNormAct');
     const orderBox = document.querySelector('.boxForOrder');
+    const dateAndTime = document.querySelector('.timeAndDate');
 
     function showYearPage(year) {
         yearPage.childNodes.forEach = [].forEach;
@@ -179,6 +180,23 @@
         yearPage.style.display = 'flex';
     }
 
+    function showTime(){
+        const WEEK_DAYS = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'субота', 'воскресение'];
+        const MONTH = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
+        const date = new Date();
+        const dayOfWeek = date.getDay();
+        const month = date.getMonth();
+        const day = date.getDate();
+        const hours = date.getHours();
+        const minutes = date.getMinutes();
+        const seconds = date.getSeconds();
+        
+        dateAndTime.innerText = `сегодня ${WEEK_DAYS[dayOfWeek - 1]}, ${day} ${MONTH[month]}
+        Время: ${hours.toString().length > 1 ? hours : '0' + hours} : ${minutes.toString().length > 1 ? minutes : '0' + minutes } : ${seconds.toString().length > 1 ? seconds : '0' + seconds}
+        Хорошего дня!`;
+        setTimeout(showTime, 950);
+    }
+    showTime();
     function fullingNormAct(dataSet, element) {
         boxForDocList.innerHTML = '';
         dataSet.forEach(act => {
